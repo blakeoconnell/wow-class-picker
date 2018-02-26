@@ -21,6 +21,15 @@ h5 {
 	text-align: center;
 }
 
+#github {
+	text-align: right;
+	padding: 20px;
+}
+
+#github h4 {
+	font-size: 1.2em;
+}
+
 .classText {
 	text-transform: uppercase;
 	vertical-align: middle;
