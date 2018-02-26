@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WoW Class Picker</title>
+	<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/classPicker.css">
+	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1>World of Warcraft Class Picker</h1>
+<h5>Use the tool below to generate a random class. You can also click on the class icons themselves to include/exclude them from the algorithm.</h5>
+<div class="container iconList col-sm-6">
+<div id="dk" class="classIconBox tankClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5d/Death_Knight_Crest.png/250px-Death_Knight_Crest.png?version=ba3064a7f3937dd86ff7b00156d2135b">
+	<h3 id="dh" class="classText">Death Knight</h3>
+</div>
+<div id="dmh" class="classIconBox tankClass">
+	<img class="classIcon dh" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/0/00/Demon_Hunter_Crest.png/250px-Demon_Hunter_Crest.png?version=8b30075e6fa72bc1abc57b6af630022d">
+	<h3 id="dh" class="classText">Demon Hunter</h3>
+</div>	
+<div id="dr" class="classIconBox tankClass healClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/e/ec/Druid_Crest.png/250px-Druid_Crest.png?version=9367161117213c580e0b8ec54dec09e1">
+	<h3 class="classText">Druid</h3>
+</div>	
+<div id="hu" class="classIconBox dpsClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/3/3e/Hunter_Crest.png/250px-Hunter_Crest.png?version=4d166b3e044d54847dfe29c4164ee667">
+	<h3 class="classText">Hunter</h3>
+</div>	
+<div id="ma" class="classIconBox dpsClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/0/04/Mage_Crest.png/250px-Mage_Crest.png?version=8cb9eca75f4e2626f9fb0eeec7e7a0a7">
+	<h3 class="classText">Mage</h3>
+</div>	
+<div id="mo" class="classIconBox tankClass healClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/a/a4/Pandaren_Crest.png/250px-Pandaren_Crest.png?version=ecc4367f09f8005b447cb645c2c609c6">
+	<h3 class="classText">Monk</h3>
+</div>	
+<div id="pa" class="classIconBox tankClass healClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/8/82/Paladin_Crest.png/250px-Paladin_Crest.png?version=d12736fa5e7eed696485b62f7d461fa5">
+	<h3 class="classText">Paladin</h3>
+</div>	
+<div id="pr" class="classIconBox healClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/50/Priest_Crest.png/250px-Priest_Crest.png?version=c526dc0a009d9d5dbdb510376d3ffef3">
+	<h3 class="classText">Priest</h3>
+</div>	
+<div id="ro" class="classIconBox dpsClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/0/02/Rogue_Crest.png/250px-Rogue_Crest.png?version=4197b77fea328434514466d4fe6a7caf">
+	<h3 class="classText">Rogue</h3>
+</div>	
+<div id="sh" class="classIconBox healClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/d/d2/Shaman_Crest.png/250px-Shaman_Crest.png?version=5efbf9a6fff95f9aecd1d1da4e6f48cb">
+	<h3 class="classText">Shaman</h3>
+</div>	
+<div id="lock" class="classIconBox dpsClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5e/Warlock_Crest.png/250px-Warlock_Crest.png?version=87d866e4d6b33db49d405a7fa3016c48">
+	<h3 class="classText">Warlock</h3>
+</div>	
+<div id="war" class="classIconBox tankClass">
+	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/4/4f/Warrior_Crest.png/250px-Warrior_Crest.png?version=d72f0b3e3246ea8bb838cd59dfab9c05">
+	<h3 class="classText">Warrior</h3>
+</div>
+</div>
+<div class="parameters container-fluid iconList col-sm-6">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="allClasses" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Enable All Classes
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="hybridClasses" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Hybrid Classes
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="pureDPS" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Pure DPS Classes Only
+  </label>
+</div>
+<div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="" id="tank" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Can Tank
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="" id="heal" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Can Heal
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="" id="dps" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Pure DPS Class
+  </label>
+</div>
+<input class="btn btn-primary" type="submit" value="Submit">
+</div>
+<div class="pickedPlace">
+	<h2>Your picked class is... 
+		<div id="picked"></div>
+		<div><h6>Pick a spec? (Coming soon!)</h6></div>
+	</h2>
+</div>
+</div>
+<script type="text/javascript" src="assets/js/classPicker.js"></script>
+</body>
+</html>
