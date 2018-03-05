@@ -8,9 +8,13 @@
 	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+
 <h1>World of Warcraft Class Picker</h1>
+<div class="container-fluid text-center col-sm-12">
 <h5>Use the tool below to generate a random class. You can also click on the class icons themselves to include/exclude them from the algorithm.</h5>
-<div class="container iconList col-sm-6">
+</div>
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class="iconList col-sm-6 col-md-5">
 <div id="dk" class="classIconBox tankClass">
 	<img class="classIcon" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/5/5d/Death_Knight_Crest.png/250px-Death_Knight_Crest.png?version=ba3064a7f3937dd86ff7b00156d2135b">
 	<h3 id="dh" class="classText">Death Knight</h3>
@@ -60,7 +64,8 @@
 	<h3 class="classText">Warrior</h3>
 </div>
 </div>
-<div class="parameters container-fluid iconList col-sm-6">
+</div>
+<div class="parameters container-fluid iconList col-sm-6 col-md-5">
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="exampleRadios" id="allClasses" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
