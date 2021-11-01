@@ -1,9 +1,10 @@
 body {
-	background: #4ECDC4;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #231a13;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #221713, #231a13);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #221713, #231a13); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: white;
 	font-family: 'Krona One', sans-serif;
+	margin: 20px;
 }
 
 h1 {
@@ -30,6 +31,10 @@ h5 {
 	font-size: 1.2em;
 }
 
+.classCol {
+	padding: 0;
+}
+
 .classText {
 	text-transform: uppercase;
 	vertical-align: middle;
@@ -38,7 +43,7 @@ h5 {
 }
 
 .classIcon {
-	margin: 0 auto 100px;
+	margin: 0 auto 3px;
 	padding: auto;
 	text-align: center;
 }
@@ -46,11 +51,11 @@ h5 {
 .classIconBox {
 	width: 100%;
 	display: grid;
-	padding: 10px 0;
-	margin: 10px auto;
+	padding: 5px 0;
+	margin: 10px auto 0;
 	border: 3px solid black;
-	height: 165px;
-	width: 165px;
+	height: 160px;
+	width: 147px;
 	background-color: silver;
 	color: black;
 }
@@ -68,7 +73,7 @@ img {
 
 .iconList {
 	margin: auto;
-	padding: 0 auto;
+	max-width: 100%;
 }
 
 .deselected {
@@ -78,7 +83,7 @@ img {
 }
 
 .parameters {
-	padding: 30px;
+	padding: 30px 15px;
 	font-size: 100%;
 	margin: auto;
 	text-align: center;
@@ -90,11 +95,16 @@ img {
 	text-align: center;
 }
 
+.pickedIcon {
+	margin-right: 10px;
+}
+
 .pickedPlace {
-	padding: 20px;
-	margin: 20px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .pickedPlace h2 {
-	font-size: 500%;
+	font-size: 3.5rem;
+	max-width: 100%;
 }

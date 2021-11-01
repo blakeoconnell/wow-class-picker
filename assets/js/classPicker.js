@@ -147,7 +147,6 @@ function generate(){
 	}
 
 	var pickedClass = Math.floor(Math.random() * (classArray.length - 0) + 0);
-	console.log(classArray[pickedClass]);
 
 	$("#picked").append(classArray[pickedClass]);
 	if (classArray[pickedClass] == "Death Knight"){
